@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+body{
+    box-sizing: border-box;
+    margin:0px;
+    border:0px;
+    background-image: url("rose1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+}
+.container .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    height:300px;
+    width:400px;
+    padding:10px;
+    border-top: 2px solid white;
+    backdrop-filter: blur(2px);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.form-input input{
+    border:none;
+    padding:10px;
+    margin:5px;
+    border-radius: 5px;
+    width:90%;
+    text-align: center;
+  
+}
+
+.content input:focus{
+    outline: none;
+}
+.form-input{
+    height: 100%;
+    width:100%;
+}
+#btnlogin{
+    border-radius: 5px;
+    border:none;
+    padding:10px;
+    width:150px;
+    background-color: rgba(255,255,255,0.5);
+    border:1px solid rgba(0,0,0,0.4);
+    margin-top: 5px;
+    width:98%;
+}
+
+
+#btnlogin:hover{
+    background-color: rgb(245, 202, 202);
+}
+@media(max-width:800px){
+    .conatiner .card{
+        width:60vh;
+    }
+}
+@media(max-width:600px){
+    .conatiner .card{
+        width:90vh;
+    }
+}
+@media(max-width:400px){
+    .conatiner .card{
+        width:95vh;
+    }
+}
+
+
